@@ -1,0 +1,11 @@
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\SmartHome.Api.exe
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\SmartHome.Api.dll
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\SmartHome.Api.deps.json
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\SmartHome.Api.runtimeconfig.json
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\SmartHome.Api.pdb
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projects\SmartHome.Api\SmartHome.Api\SmartHome.Api\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
