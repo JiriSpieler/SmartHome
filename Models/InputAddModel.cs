@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class RoomAddModel
+    public class InputAddModel
     {
         public int? Id { get; set; }
         public string Name { get; set; }
-        public decimal DefaultTemp { get; set; }
-        public decimal Hystersis { get; set; }
+        public string Circuit { get; set; }
+        public string Dev { get; set; }
+        public decimal? Value { get; set; }
     }
 }

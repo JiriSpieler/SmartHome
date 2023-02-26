@@ -18,14 +18,32 @@ namespace SmartHome.Repository.Repositories
             
         }
 
+        public async Task<List<Room>> GetRoomsAsync()
+        {
+            return await GetAllAsync();
+        }
+
         public async Task AddRoomAsync(RoomAddModel model)
         {
-            await AddAsync(new Dao.Dao.Room()
+            Room room = new Room();
+
+            if (model.Id.HasValue)
             {
-                DefaultTemp = model.DefaultTemp,
-                Hystersis = model.Hystersis,
-                Name = model.Name
-            });
+                room = await GetByIdAsync(model.Id.Value);
+
+                room.DefaultTemp = model.DefaultTemp;
+                room.Name = model.Name;
+                room.Hystersis= model.Hystersis;
+
+                await UpdateAsync(room);
+            } else
+            {
+                room.DefaultTemp = model.DefaultTemp;
+                room.Name = model.Name;
+                room.Hystersis = model.Hystersis;
+
+                await AddAsync(room);
+            }     
         }
 
         public async Task<Room> GetRoomAsync(int id)

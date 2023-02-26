@@ -10,6 +10,8 @@ namespace SmartHome.Repository.IRepositories
 {
     public interface IRoomRepository
     {
+        Task<List<Room>> GetRoomsAsync();
+
         Task AddRoomAsync(RoomAddModel model);
 
         Task<Room> GetRoomAsync(int id);
