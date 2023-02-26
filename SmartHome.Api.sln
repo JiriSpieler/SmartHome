@@ -5,15 +5,13 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{77D2409E-4F22-4048-AA8B-F12D09F06C0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Repository", "SmartHome.Repository\SmartHome.Repository.csproj", "{E7DEB831-DDB6-40A3-A672-53E679C68BA9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Dao", "SmartHome.Dao\SmartHome.Dao.csproj", "{8B3BEB39-0C9E-4CDE-B9B9-0BC669E1417D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Interfaces", "SmartHome.Interfaces\SmartHome.Interfaces.csproj", "{3AD9D7C5-E98D-4172-9406-9B0D11347E00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{08086D91-FB08-4C54-850D-8076AB8E6B99}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Api", "SmartHome.Api\SmartHome.Api.csproj", "{3966064B-D92B-48BA-ACDF-B319325696ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Repository", "SmartHome.Repository\SmartHome.Repository.csproj", "{AFFCE59B-6029-41B1-AC83-64A727F928FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,18 +23,10 @@ Global
 		{77D2409E-4F22-4048-AA8B-F12D09F06C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77D2409E-4F22-4048-AA8B-F12D09F06C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77D2409E-4F22-4048-AA8B-F12D09F06C0E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7DEB831-DDB6-40A3-A672-53E679C68BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7DEB831-DDB6-40A3-A672-53E679C68BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7DEB831-DDB6-40A3-A672-53E679C68BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7DEB831-DDB6-40A3-A672-53E679C68BA9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8B3BEB39-0C9E-4CDE-B9B9-0BC669E1417D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B3BEB39-0C9E-4CDE-B9B9-0BC669E1417D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B3BEB39-0C9E-4CDE-B9B9-0BC669E1417D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B3BEB39-0C9E-4CDE-B9B9-0BC669E1417D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3AD9D7C5-E98D-4172-9406-9B0D11347E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3AD9D7C5-E98D-4172-9406-9B0D11347E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3AD9D7C5-E98D-4172-9406-9B0D11347E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3AD9D7C5-E98D-4172-9406-9B0D11347E00}.Release|Any CPU.Build.0 = Release|Any CPU
 		{08086D91-FB08-4C54-850D-8076AB8E6B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{08086D91-FB08-4C54-850D-8076AB8E6B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08086D91-FB08-4C54-850D-8076AB8E6B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +35,10 @@ Global
 		{3966064B-D92B-48BA-ACDF-B319325696ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3966064B-D92B-48BA-ACDF-B319325696ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3966064B-D92B-48BA-ACDF-B319325696ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFCE59B-6029-41B1-AC83-64A727F928FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFCE59B-6029-41B1-AC83-64A727F928FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFCE59B-6029-41B1-AC83-64A727F928FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFCE59B-6029-41B1-AC83-64A727F928FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
