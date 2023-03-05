@@ -34,6 +34,19 @@ namespace SmartHome.Repository.Repositories
             await AddAsync(log);
         }
 
+        public void AddLog(LogAddModel model)
+        {
+            Log log = new Log();
+
+            log.CreateDate = DateTime.Now;
+            log.Description = model.Description;
+            log.Message = model.Message;
+            log.Type = model.Type;
+            log.Section = model.Section;
+
+            Add(log);
+        }
+
         public async Task<Log> GetLogAsync(int id)
         {
             return await GetByIdAsync(id);

@@ -18,7 +18,7 @@ namespace SmartHome.Repository.Repositories
 
         public async Task<List<ThermoRule>> GetThermoRulesAsync()
         {
-            return await GetAllAsync();
+            return (await GetAllAsync()).Where(p => !p.Disabled).ToList();
         }
 
         public async Task AddThermoRuleAsync(ThermoRuleAddModel model)

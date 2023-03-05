@@ -14,6 +14,8 @@ namespace SmartHome.Repository.IRepositories
 
         Task AddLogAsync(LogAddModel model);
 
+        void AddLog(LogAddModel model);
+
         Task<Log> GetLogAsync(int id);
     }
 }
