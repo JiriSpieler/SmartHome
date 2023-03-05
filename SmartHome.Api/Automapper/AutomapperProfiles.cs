@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Models;
 using SmartHome.Dao.Dao;
-using System.Collections.Generic;
 
 namespace SmartHome.Api.Automapper
 {
@@ -16,6 +15,18 @@ namespace SmartHome.Api.Automapper
 
             CreateMap<Output, OutputModel>();
             CreateMap<OutputModel, Output>();
+
+            CreateMap<ThermoRule, ThermoRuleModel>();
+            CreateMap<ThermoRuleModel, ThermoRule>();
+
+            CreateMap<RoomThermoRule, RoomThermoRuleModel>();
+            CreateMap<RoomThermoRuleModel, RoomThermoRule>();
+
+            CreateMap<RoomInput, RoomInputModel>();
+            CreateMap<RoomInputModel, RoomInput>();
+
+            CreateMap<RoomOutput, RoomOutputModel>();
+            CreateMap<RoomOutputModel, RoomOutput>();
         }
     }
 }

@@ -18,6 +18,8 @@ public partial class SmartHomeContext : DbContext
 
     public virtual DbSet<Input> Inputs { get; set; }
 
+    public virtual DbSet<Log> Logs { get; set; }
+
     public virtual DbSet<Output> Outputs { get; set; }
 
     public virtual DbSet<Room> Rooms { get; set; }
@@ -46,7 +48,7 @@ public partial class SmartHomeContext : DbContext
 
             optionsBuilder.UseSqlServer(connectionString);
         }
-    }
+    } 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -70,6 +72,15 @@ public partial class SmartHomeContext : DbContext
             entity.Property(e => e.Value)
                 .HasColumnType("decimal(12, 2)")
                 .HasColumnName("VALUE");
+        });
+
+        modelBuilder.Entity<Log>(entity =>
+        {
+            entity.ToTable("LOGS");
+
+            entity.Property(e => e.CreateDate).HasColumnType("datetime");
+            entity.Property(e => e.Section).HasMaxLength(255);
+            entity.Property(e => e.Type).HasMaxLength(50);
         });
 
         modelBuilder.Entity<Output>(entity =>
@@ -203,9 +214,7 @@ public partial class SmartHomeContext : DbContext
             entity.Property(e => e.End)
                 .HasMaxLength(5)
                 .HasColumnName("END");
-            entity.Property(e => e.IntervalSatus)
-                .HasColumnType("decimal(1, 0)")
-                .HasColumnName("INTERVAL_SATUS");
+            entity.Property(e => e.IntervalSatus).HasColumnName("INTERVAL_SATUS");
             entity.Property(e => e.LastUpdate)
                 .HasColumnType("datetime")
                 .HasColumnName("LAST_UPDATE");
@@ -215,9 +224,7 @@ public partial class SmartHomeContext : DbContext
             entity.Property(e => e.Temp)
                 .HasColumnType("decimal(12, 2)")
                 .HasColumnName("TEMP");
-            entity.Property(e => e.WeekDay)
-                .HasColumnType("decimal(12, 0)")
-                .HasColumnName("WEEK_DAY");
+            entity.Property(e => e.WeekDay).HasColumnName("WEEK_DAY");
         });
 
         modelBuilder.Entity<User>(entity =>

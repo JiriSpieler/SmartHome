@@ -25,6 +25,16 @@ namespace SmartHome.Repository
 
         IRepository<Output> Output { get; }
 
+        IRepository<ThermoRule> ThermoRule { get; }
+
+        IRepository<RoomInput> RoomInput { get; }
+
+        IRepository<RoomOutput> RoomOutput { get; }
+
+        IRepository<RoomThermoRule> RoomThermoRule { get; }
+
+        IRepository<Log> Log { get; }
+
         #endregion
 
         #region EXTENDED REPOSTIORIES
@@ -34,6 +44,16 @@ namespace SmartHome.Repository
         IInputRepository InputEx { get; }
 
         IOutputRepository OutputEx { get; }
+
+        IThermoRuleRepository ThermoRuleEx { get; }
+
+        IRoomInputRepository RoomInputEx { get; }
+
+        IRoomOutputRepository RoomOutputEx { get; }
+
+        IRoomThermoRuleRepository RoomThermoRuleEx { get; }
+
+        ILogRepository LogEx { get; }
 
         #endregion
     }

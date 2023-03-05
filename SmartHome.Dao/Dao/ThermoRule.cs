@@ -13,9 +13,9 @@ public partial class ThermoRule
 
     public string End { get; set; } = null!;
 
-    public decimal WeekDay { get; set; }
+    public int WeekDay { get; set; }
 
-    public decimal IntervalSatus { get; set; }
+    public bool IntervalSatus { get; set; }
 
     public bool Disabled { get; set; }
 

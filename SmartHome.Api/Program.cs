@@ -2,7 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SmartHome.Api;
 using SmartHome.Api.Attributes;
+using SmartHome.Application;
+using SmartHome.Application.Services;
 using SmartHome.Dao.Dao;
+using SmartHome.Jobs;
 using SmartHome.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<SmartHomeContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")), ServiceLifetime.Transient);
 
+builder.Services.AddHostedService<ThermoRuleStatusJob>();
 
 builder.Services.AddSwaggerGen(options => {
     options.OperationFilter<SwaggerHeaderFilter>();    

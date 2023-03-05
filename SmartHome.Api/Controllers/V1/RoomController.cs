@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Models;
+using SmartHome.Application;
 using SmartHome.Dao.Dao;
 using SmartHome.Repository;
 

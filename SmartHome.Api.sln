@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{77D2409E-4F22-4048-AA8B-F12D09F06C0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{77D2409E-4F22-4048-AA8B-F12D09F06C0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Dao", "SmartHome.Dao\SmartHome.Dao.csproj", "{8B3BEB39-0C9E-4CDE-B9B9-0BC669E1417D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHome.Dao", "SmartHome.Dao\SmartHome.Dao.csproj", "{8B3BEB39-0C9E-4CDE-B9B9-0BC669E1417D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{08086D91-FB08-4C54-850D-8076AB8E6B99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constants", "Constants\Constants.csproj", "{08086D91-FB08-4C54-850D-8076AB8E6B99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Api", "SmartHome.Api\SmartHome.Api.csproj", "{3966064B-D92B-48BA-ACDF-B319325696ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHome.Api", "SmartHome.Api\SmartHome.Api.csproj", "{3966064B-D92B-48BA-ACDF-B319325696ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Repository", "SmartHome.Repository\SmartHome.Repository.csproj", "{AFFCE59B-6029-41B1-AC83-64A727F928FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHome.Repository", "SmartHome.Repository\SmartHome.Repository.csproj", "{AFFCE59B-6029-41B1-AC83-64A727F928FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Jobs", "SmartHome.Jobs\SmartHome.Jobs.csproj", "{A237DAB3-B3F7-40A5-9F78-C0CFBD36A3C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Application", "SmartHome.Application\SmartHome.Application.csproj", "{3A621D86-7B02-459A-BE93-F212B9E331EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{AFFCE59B-6029-41B1-AC83-64A727F928FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFCE59B-6029-41B1-AC83-64A727F928FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFCE59B-6029-41B1-AC83-64A727F928FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A237DAB3-B3F7-40A5-9F78-C0CFBD36A3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A237DAB3-B3F7-40A5-9F78-C0CFBD36A3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A237DAB3-B3F7-40A5-9F78-C0CFBD36A3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A237DAB3-B3F7-40A5-9F78-C0CFBD36A3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A621D86-7B02-459A-BE93-F212B9E331EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A621D86-7B02-459A-BE93-F212B9E331EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A621D86-7B02-459A-BE93-F212B9E331EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A621D86-7B02-459A-BE93-F212B9E331EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

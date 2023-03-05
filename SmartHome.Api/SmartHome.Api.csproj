@@ -21,7 +21,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Constants\Constants.csproj" />
+    <ProjectReference Include="..\SmartHome.Application\SmartHome.Application.csproj" />
     <ProjectReference Include="..\SmartHome.Dao\SmartHome.Dao.csproj" />
+    <ProjectReference Include="..\SmartHome.Jobs\SmartHome.Jobs.csproj" />
     <ProjectReference Include="..\SmartHome.Repository\SmartHome.Repository.csproj" />
   </ItemGroup>
 
